@@ -1,0 +1,22 @@
+docker build -f Dockerfile.dev .
+run -p 3000:3000 -v /app/modules -v $(pwd):/app 4dd049404394
+
+
+
+# Now you can make changes to src/App.js
+
+#############
+
+#docker compose makes things easier here
+using the docker-compose.yml file
+
+docker-compose up 
+
+Running tests inside the environment
+
+docker run -it 18de28d15254 npm run test 
+
+
+
+
+
